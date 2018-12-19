@@ -1,4 +1,6 @@
-﻿namespace Checksum
+﻿using System.Drawing;
+
+namespace Checksum
 {
     partial class Form1
     {
@@ -47,6 +49,14 @@
             this.button5 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
+
+            try
+            {
+                this.Icon = new Icon("fra.ico");
+            }
+            catch (System.IO.FileNotFoundException) { }
+            
+
             // 
             // label1
             // 
@@ -60,7 +70,7 @@
             // 
             // openFileDialog1
             // 
-            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.FileName = "";
             this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
             // 
             // button1
@@ -129,6 +139,8 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(470, 20);
             this.textBox4.TabIndex = 8;
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+
             // 
             // button2
             // 
@@ -136,7 +148,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 9;
-            this.button2.Text = "Copier SHA2";
+            this.button2.Text = "Copier";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -146,7 +158,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 10;
-            this.button3.Text = "Copier SHA1";
+            this.button3.Text = "Copier";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -156,7 +168,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 11;
-            this.button4.Text = "Copier MD5";
+            this.button4.Text = "Copier";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -220,11 +232,10 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "Checksum";
+            this.Text = "Hacheck";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
-            this.Icon = new System.Drawing.Icon("icon_checksum.ico");
 
         }
 

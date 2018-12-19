@@ -2,8 +2,11 @@ f:\users\mehdi\documents\Dev\checksum\Checksum\Checksum\bin\Release\Checksum.exe
 f:\users\mehdi\documents\Dev\checksum\Checksum\Checksum\bin\Release\Checksum.exe
 f:\users\mehdi\documents\Dev\checksum\Checksum\Checksum\bin\Release\Checksum.pdb
 f:\users\mehdi\documents\Dev\checksum\Checksum\Checksum\obj\Release\Checksum.Form1.resources
-f:\users\mehdi\documents\Dev\checksum\Checksum\Checksum\obj\Release\Checksum.Properties.Resources.resources
 f:\users\mehdi\documents\Dev\checksum\Checksum\Checksum\obj\Release\Checksum.csproj.GenerateResource.Cache
-f:\users\mehdi\documents\Dev\checksum\Checksum\Checksum\obj\Release\Checksum.exe
-f:\users\mehdi\documents\Dev\checksum\Checksum\Checksum\obj\Release\Checksum.pdb
 f:\users\mehdi\documents\Dev\checksum\Checksum\Checksum\obj\Release\Checksum.csprojResolveAssemblyReference.cache
+f:\users\mehdi\documents\Dev\checksum\Checksum\Checksum\bin\Release\4.7\Hacheck.exe.config
+f:\users\mehdi\documents\Dev\checksum\Checksum\Checksum\bin\Release\4.7\Hacheck.exe
+f:\users\mehdi\documents\Dev\checksum\Checksum\Checksum\bin\Release\4.7\Hacheck.pdb
+f:\users\mehdi\documents\Dev\checksum\Checksum\Checksum\obj\Release\Hacheck.Properties.Resources.resources
+f:\users\mehdi\documents\Dev\checksum\Checksum\Checksum\obj\Release\Hacheck.exe
+f:\users\mehdi\documents\Dev\checksum\Checksum\Checksum\obj\Release\Hacheck.pdb
