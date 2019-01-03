@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -20,13 +21,28 @@ namespace Checksum
             InitializeComponent();
         }
 
+        public class Benchmark : IDisposable
+        {
+            private readonly Stopwatch timer = new Stopwatch();
+  
+
+            public Benchmark()
+            {
+                timer.Start();
+            }
+
+            public void Dispose()
+            {
+                timer.Stop();
+                Console.WriteLine($"{timer.Elapsed}");
+                Console.ReadLine();
+            }
+        }
 
         private static string GetSHA2(string file)
         {
-            using (FileStream stream = File.OpenRead(file))
+            using (var stream = new BufferedStream(File.OpenRead(file), 1200000))
             {
-
-
                 var sha2 = new SHA256Managed();
                 byte[] checksum_sha2 = sha2.ComputeHash(stream);
                 return BitConverter.ToString(checksum_sha2).Replace("-", String.Empty);
@@ -45,7 +61,7 @@ namespace Checksum
 
         private static string GetSHA3(string file)
         {
-            using (FileStream stream = File.OpenRead(file))
+            using (var stream = new BufferedStream(File.OpenRead(file), 1200000))
             {
                 var sha3 = new SHA384Managed();
                 byte[] checksum_sha3 = sha3.ComputeHash(stream);
@@ -55,7 +71,7 @@ namespace Checksum
 
         private static string GetSHA5(string file)
         {
-            using (FileStream stream = File.OpenRead(file))
+            using (var stream = new BufferedStream(File.OpenRead(file), 1200000))
             {
                 var sha5 = new SHA512Managed();
                 byte[] checksum_sha5 = sha5.ComputeHash(stream);
@@ -67,17 +83,12 @@ namespace Checksum
 
         private static string GetMD5(string file)
         {
-            using (FileStream stream = File.OpenRead(file))
+            using (var stream = new BufferedStream(File.OpenRead(file), 1200000))
             {
                 var md5 = new MD5CryptoServiceProvider();
                 byte[] checksum_md5 = md5.ComputeHash(stream);
                 return BitConverter.ToString(checksum_md5).Replace("-", String.Empty);
             }
-        }
-
-        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
-        {
-
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -86,31 +97,12 @@ namespace Checksum
             {
                 label6.Visible = false;
                 textBox4.Text = openFileDialog1.FileName;
-                textBox1.Text = GetSHA2(openFileDialog1.FileName);
-                textBox2.Text = GetSHA1(openFileDialog1.FileName);
-                textBox3.Text = GetMD5(openFileDialog1.FileName);
-
             }
         }
         private void textBox4_DragDrop(object sender,
         System.Windows.Forms.DragEventArgs e)
         {
             textBox4.Text = e.Data.GetData(DataFormats.Text).ToString();
-        }
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -139,11 +131,6 @@ namespace Checksum
                 Clipboard.SetText(textBox3.Text);
             }
             catch (ArgumentNullException) { }
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -185,14 +172,31 @@ namespace Checksum
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
 
+        private void hash_sha2_Click(object sender, EventArgs e)
+        {
+            using (var bench = new Benchmark())
+            {
+                textBox1.Text = GetSHA2(openFileDialog1.FileName);
+            }
         }
 
-        private void textBox4_TextChanged(object sender, EventArgs e)
+        private void hash_sha1_Click(object sender, EventArgs e)
         {
+            using (var bench = new Benchmark())
+            {
+                textBox2.Text = GetSHA1(openFileDialog1.FileName);
+            }
+            
+        }
 
+        private void hash_md5_Click(object sender, EventArgs e)
+        {
+            using (var bench = new Benchmark())
+            {
+                textBox3.Text = GetMD5(openFileDialog1.FileName);
+            }
+            
         }
     }
 }

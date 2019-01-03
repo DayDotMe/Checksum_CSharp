@@ -10,3 +10,6 @@ f:\users\mehdi\documents\Dev\checksum\Checksum\Checksum\bin\Release\4.7\Hacheck.
 f:\users\mehdi\documents\Dev\checksum\Checksum\Checksum\obj\Release\Hacheck.Properties.Resources.resources
 f:\users\mehdi\documents\Dev\checksum\Checksum\Checksum\obj\Release\Hacheck.exe
 f:\users\mehdi\documents\Dev\checksum\Checksum\Checksum\obj\Release\Hacheck.pdb
+D:\Documents\Dev\checksum\Checksum\Checksum\bin\Release\4.7\Hacheck.exe.config
+D:\Documents\Dev\checksum\Checksum\Checksum\obj\Release\Hacheck.exe
+D:\Documents\Dev\checksum\Checksum\Checksum\obj\Release\Hacheck.pdb

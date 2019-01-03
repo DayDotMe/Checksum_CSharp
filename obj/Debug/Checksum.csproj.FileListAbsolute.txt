@@ -7,3 +7,12 @@ f:\users\mehdi\documents\Dev\checksum\Checksum\Checksum\obj\Debug\Checksum.Prope
 f:\users\mehdi\documents\Dev\checksum\Checksum\Checksum\obj\Debug\Checksum.csproj.GenerateResource.Cache
 f:\users\mehdi\documents\Dev\checksum\Checksum\Checksum\obj\Debug\Checksum.exe
 f:\users\mehdi\documents\Dev\checksum\Checksum\Checksum\obj\Debug\Checksum.pdb
+D:\Documents\Dev\checksum\Checksum\Checksum\bin\Debug\Hacheck.exe.config
+D:\Documents\Dev\checksum\Checksum\Checksum\bin\Debug\Hacheck.exe
+D:\Documents\Dev\checksum\Checksum\Checksum\bin\Debug\Hacheck.pdb
+D:\Documents\Dev\checksum\Checksum\Checksum\obj\Debug\Checksum.csprojResolveAssemblyReference.cache
+D:\Documents\Dev\checksum\Checksum\Checksum\obj\Debug\Checksum.Form1.resources
+D:\Documents\Dev\checksum\Checksum\Checksum\obj\Debug\Hacheck.Properties.Resources.resources
+D:\Documents\Dev\checksum\Checksum\Checksum\obj\Debug\Checksum.csproj.GenerateResource.Cache
+D:\Documents\Dev\checksum\Checksum\Checksum\obj\Debug\Hacheck.exe
+D:\Documents\Dev\checksum\Checksum\Checksum\obj\Debug\Hacheck.pdb

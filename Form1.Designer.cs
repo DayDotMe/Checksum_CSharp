@@ -48,15 +48,10 @@ namespace Checksum
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
+            this.hash_sha2 = new System.Windows.Forms.Button();
+            this.hash_sha1 = new System.Windows.Forms.Button();
+            this.hash_md5 = new System.Windows.Forms.Button();
             this.SuspendLayout();
-
-            try
-            {
-                this.Icon = new Icon("fra.ico");
-            }
-            catch (System.IO.FileNotFoundException) { }
-            
-
             // 
             // label1
             // 
@@ -66,12 +61,7 @@ namespace Checksum
             this.label1.Size = new System.Drawing.Size(38, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Fichier";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "";
-            this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
+
             // 
             // button1
             // 
@@ -89,8 +79,7 @@ namespace Checksum
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(470, 20);
             this.textBox1.TabIndex = 2;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
+               // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -99,7 +88,7 @@ namespace Checksum
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "SHA2";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+        
             // 
             // label3
             // 
@@ -139,7 +128,6 @@ namespace Checksum
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(470, 20);
             this.textBox4.TabIndex = 8;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
 
             // 
             // button2
@@ -180,7 +168,7 @@ namespace Checksum
             this.label5.Size = new System.Drawing.Size(32, 13);
             this.label5.TabIndex = 12;
             this.label5.Text = "Hash";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+
             // 
             // textBox5
             // 
@@ -210,11 +198,44 @@ namespace Checksum
             this.label6.Text = "label6";
             this.label6.Visible = false;
             // 
+            // hash_sha2
+            // 
+            this.hash_sha2.Location = new System.Drawing.Point(641, 128);
+            this.hash_sha2.Name = "hash_sha2";
+            this.hash_sha2.Size = new System.Drawing.Size(75, 23);
+            this.hash_sha2.TabIndex = 16;
+            this.hash_sha2.Text = "Hash";
+            this.hash_sha2.UseVisualStyleBackColor = true;
+            this.hash_sha2.Click += new System.EventHandler(this.hash_sha2_Click);
+            // 
+            // hash_sha1
+            // 
+            this.hash_sha1.Location = new System.Drawing.Point(641, 170);
+            this.hash_sha1.Name = "hash_sha1";
+            this.hash_sha1.Size = new System.Drawing.Size(75, 23);
+            this.hash_sha1.TabIndex = 17;
+            this.hash_sha1.Text = "Hash";
+            this.hash_sha1.UseVisualStyleBackColor = true;
+            this.hash_sha1.Click += new System.EventHandler(this.hash_sha1_Click);
+            // 
+            // hash_md5
+            // 
+            this.hash_md5.Location = new System.Drawing.Point(641, 210);
+            this.hash_md5.Name = "hash_md5";
+            this.hash_md5.Size = new System.Drawing.Size(75, 23);
+            this.hash_md5.TabIndex = 18;
+            this.hash_md5.Text = "Hash";
+            this.hash_md5.UseVisualStyleBackColor = true;
+            this.hash_md5.Click += new System.EventHandler(this.hash_md5_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(654, 341);
+            this.ClientSize = new System.Drawing.Size(726, 341);
+            this.Controls.Add(this.hash_md5);
+            this.Controls.Add(this.hash_sha1);
+            this.Controls.Add(this.hash_sha2);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.textBox5);
@@ -233,7 +254,7 @@ namespace Checksum
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Hacheck";
-            this.Load += new System.EventHandler(this.Form1_Load);
+
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -258,6 +279,9 @@ namespace Checksum
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button hash_sha2;
+        private System.Windows.Forms.Button hash_sha1;
+        private System.Windows.Forms.Button hash_md5;
     }
 }
 
