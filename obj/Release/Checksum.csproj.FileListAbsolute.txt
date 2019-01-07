@@ -7,3 +7,12 @@ f:\users\mehdi\documents\Dev\checksum\Checksum\Checksum\obj\Release\Checksum.csp
 f:\users\mehdi\documents\Dev\checksum\Checksum\Checksum\obj\Release\Checksum.exe
 f:\users\mehdi\documents\Dev\checksum\Checksum\Checksum\obj\Release\Checksum.pdb
 f:\users\mehdi\documents\Dev\checksum\Checksum\Checksum\obj\Release\Checksum.csprojResolveAssemblyReference.cache
+C:\Users\USER\Source\Repos\MehdiBela\Checksum_CSharp\bin\Release\Checksum.exe.config
+C:\Users\USER\Source\Repos\MehdiBela\Checksum_CSharp\obj\Release\Checksum.exe
+C:\Users\USER\Source\Repos\MehdiBela\Checksum_CSharp\obj\Release\Checksum.pdb
+C:\Users\USER\Source\Repos\MehdiBela\Checksum_CSharp\bin\Release\Checksum.exe
+C:\Users\USER\Source\Repos\MehdiBela\Checksum_CSharp\bin\Release\Checksum.pdb
+C:\Users\USER\Source\Repos\MehdiBela\Checksum_CSharp\obj\Release\Checksum.csprojResolveAssemblyReference.cache
+C:\Users\USER\Source\Repos\MehdiBela\Checksum_CSharp\obj\Release\Checksum.Form1.resources
+C:\Users\USER\Source\Repos\MehdiBela\Checksum_CSharp\obj\Release\Checksum.Properties.Resources.resources
+C:\Users\USER\Source\Repos\MehdiBela\Checksum_CSharp\obj\Release\Checksum.csproj.GenerateResource.Cache

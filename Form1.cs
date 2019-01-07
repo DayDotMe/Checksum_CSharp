@@ -23,7 +23,7 @@ namespace Checksum
 
         private static string GetSHA2(string file)
         {
-            using (FileStream stream = File.OpenRead(file))
+            using (var stream = new BufferedStream(File.OpenRead(file), 1200000))
             {
 
                 
@@ -35,7 +35,7 @@ namespace Checksum
         }
         private static string GetSHA1(string file)
         {
-            using (FileStream stream = File.OpenRead(file))
+            using (var stream = new BufferedStream(File.OpenRead(file), 1200000))
             {
                 var sha1 = new SHA1Managed();
                 byte[] checksum_sha1 = sha1.ComputeHash(stream);
@@ -45,7 +45,7 @@ namespace Checksum
 
         private static string GetMD5(string file)
         {
-            using (FileStream stream = File.OpenRead(file))
+            using (var stream = new BufferedStream(File.OpenRead(file), 1200000))
             {
                 var md5 = new MD5CryptoServiceProvider();
                 byte[] checksum_md5 = md5.ComputeHash(stream);

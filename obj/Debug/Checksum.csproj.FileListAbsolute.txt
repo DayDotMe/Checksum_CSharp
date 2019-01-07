@@ -7,3 +7,6 @@ f:\users\mehdi\documents\Dev\checksum\Checksum\Checksum\obj\Debug\Checksum.Prope
 f:\users\mehdi\documents\Dev\checksum\Checksum\Checksum\obj\Debug\Checksum.csproj.GenerateResource.Cache
 f:\users\mehdi\documents\Dev\checksum\Checksum\Checksum\obj\Debug\Checksum.exe
 f:\users\mehdi\documents\Dev\checksum\Checksum\Checksum\obj\Debug\Checksum.pdb
+C:\Users\USER\Source\Repos\MehdiBela\Checksum_CSharp\bin\Debug\Checksum.exe.config
+C:\Users\USER\Source\Repos\MehdiBela\Checksum_CSharp\obj\Debug\Checksum.exe
+C:\Users\USER\Source\Repos\MehdiBela\Checksum_CSharp\obj\Debug\Checksum.pdb
